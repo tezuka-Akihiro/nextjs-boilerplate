@@ -1,0 +1,71 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      // ===== レガシー互換（段階的移行用） =====
+      "@/*": ["./src/*"],
+      
+      // ===== バックエンド層エイリアス =====
+      "@backend/*": ["./src/backend/*"],
+      "@api/*": ["./src/backend/api/*"],
+      "@controllers/*": ["./src/backend/controllers/*"],
+      "@tasks/*": ["./src/backend/tasks/*"],
+      "@resources/*": ["./src/backend/resources/*"],
+      "@responses/*": ["./src/backend/responses/*"],
+      
+      // ===== フロントエンド層エイリアス =====
+      "@frontend/*": ["./src/app/*"],
+      "@components/*": ["./src/app/components/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@app/*": ["./src/app/*"],
+      
+      // ===== UI・スタイル エイリアス =====
+      "@ui/*": ["./src/app/components/ui/*"],
+      "@theme/*": ["./src/lib/theme/*"],
+      "@styles/*": ["./src/styles/*"],
+      
+      // ===== 共通エイリアス =====
+      "@shared/*": ["./src/shared/*"],
+      "@types/*": ["./src/shared/types/*"],
+      "@config/*": ["./src/shared/config/*"],
+      "@lib/*": ["./src/lib/*"],
+      "@utils/*": ["./src/lib/*"],
+      
+      // ===== テスト用エイリアス =====
+      "@tests/*": ["./tests/*"],
+      "@fixtures/*": ["./tests/fixtures/*"],
+      "@factories/*": ["./tests/factories/*"],
+      "@mocks/*": ["./tests/mocks/*"],
+      "@templates/*": ["./docs/templates/*"],
+      
+      // ===== 監視・分析用エイリアス =====
+      "@monitoring/*": ["./src/monitoring/*"],
+      "@analytics/*": ["./src/analytics/*"],
+      "@database/*": ["./docs/database/*"],
+      
+      // ===== 外部サービス用エイリアス =====
+      "@services/*": ["./src/services/*"],
+      "@integrations/*": ["./src/integrations/*"],
+      "@external/*": ["./src/external/*"]
+    }
+  },
+  "include": ["next-env.d.ts", "src/**/*.ts", "src/**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}
