@@ -53,7 +53,7 @@ jobs:
       - name: Run E2E tests on staging
         run: npm run test:e2e
         env:
-          E2E_BASE_URL: https://tsumiage-staging.vercel.app
+          E2E_BASE_URL: https://projectname-staging.vercel.app
         continue-on-error: true
       
       - name: Notify deployment
@@ -64,5 +64,5 @@ jobs:
               owner: context.repo.owner,
               repo: context.repo.repo,
               commit_sha: context.sha,
-              body: '🚧 Deployed to staging: https://tsumiage-staging.vercel.app'
+              body: '🚧 Deployed to staging: https://projectname-staging.vercel.app'
             })

@@ -1,4 +1,4 @@
-# CLAUDE.md - tsumiageプロジェクト開発指示書
+# CLAUDE.md - projectnameプロジェクト開発指示書
 
 絶対に守ること。
 現在は設計中であるため実装は絶対にしない。
@@ -7,9 +7,8 @@
 ## 📋 プロジェクト概要
 
 **[プロジェクト詳細]**: [`docs/project/project-overview.md`](./docs/project/project-overview.md)
-- **アプリ名**: tsumiage（積み上げ）
-- **目的**: 20-30代男性向けの、男磨きを経験値として数値化、見える化するアプリ
-- **アーキテクチャ**: API分離 + 1サービス1SPA設計 + AI滑走路4層バックエンド
+- **アプリ名**: 
+- **目的**: 
 
 ## 🔧 技術実装指針
 
@@ -30,6 +29,10 @@
 
 コード生成時は必ず `docs/templates/` のひな型を参照してください：
 
+- **Requirements**: `docs/templates/requirements/` - 要件定義テンプレート
+  - アプリ要件: `docs/templates/requirements/app.md`
+  - サービス要件: `docs/templates/requirements/service.md` 
+  - 機能要件: `docs/templates/requirements/function.md`
 - **Backend層**: `docs/templates/backend/` - AI滑走路4層アーキテクチャ
   - API層: `docs/templates/backend/ApiTemplate.ts`
   - Controller層: `docs/templates/backend/ControllerTemplate.ts`
@@ -41,9 +44,10 @@
 
 各ひな型の制約・命名規則・コメント記法を必ず守ってください。詳細は [`docs/templates/README.md`](./docs/templates/README.md) を参照。
 
+**要件定義作成時は必須**：新機能・サービス要件作成時は対応するテンプレートから開始してください。
 
 ## 主要機能（MVP）
-`docs\functional-requirements\README.md`
+`src/app/README.md`
 
 ## 🚀 運用・デプロイメント
 
@@ -52,16 +56,6 @@
 - Vercel デプロイ・監視システム統合
 
 ## 🔗 関連ドキュメント
-
-### 機能仕様・要件定義
-- **[男磨き積み上げサービス]**: `src/app/status/`
-- **[男磨きSNSサービス]**: `src/app/social/`
-
-### デザイン・UI/UX
-- **[ワイヤーフレーム・画面仕様]**: 各サービスの画面仕様統合書に統合済み
-  - 男磨きSNS: `src/app/social/画面仕様統合書.md`
-  - 男磨き積み上げ: `src/app/status/画面仕様統合書.md` 
-
 ### 開発・運用支援
 - **[API仕様書]**: `docs/architecture/api-specification.md`
 - **[データベース設計]**: `docs/database/`
@@ -90,4 +84,4 @@
 4. **セキュリティファースト** - RLS活用・定期キーローテーション
 5. **TDD実践** - AITDD tsumiki kairo/tddコマンド活用
 
-> **注記**: この指示書はtsumiageプロジェクトの開発方針を定める重要なドキュメントです。全開発者が遵守してください。
+> **注記**: この指示書はプロジェクトの開発方針を定める重要なドキュメントです。全開発者が遵守してください。

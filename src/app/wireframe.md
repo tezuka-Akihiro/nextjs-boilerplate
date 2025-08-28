@@ -1,7 +1,7 @@
 # ヘッダー・フッター共通ワイヤフレーム
 
 ## 概要
-tsumiageアプリの全画面で共通使用されるヘッダーとフッターコンポーネントのレイアウト構成を統合定義します。
+projectnameアプリの全画面で共通使用されるヘッダーとフッターコンポーネントのレイアウト構成を統合定義します。
 
 ## 🎆 統合設計コンセプト
 - **極限ミニマル**: ヘッダーはロゴ + メニュー + ログアウトのみ
@@ -19,7 +19,7 @@ tsumiageアプリの全画面で共通使用されるヘッダーとフッター
 ```
 ┌────────────────────────────────────────┐
 │                                        │
-│  tsumiage                           ≡  │
+│  projectname                           ≡  │
 │                                        │
 └────────────────────────────────────────┘
 ```
@@ -32,7 +32,7 @@ tsumiageアプリの全画面で共通使用されるヘッダーとフッター
 ### 内容説明
 
 #### 左側エリア
-- **ロゴ**: "tsumiage"文字ロゴのみ
+- **ロゴ**: "projectname"文字ロゴのみ
 - **位置**: 最左端、垂直中央揃え
 - **クリック**: ホーム画面へ遷移
 - **スタイル**: テキストロゴ、シンプルフォント
@@ -48,7 +48,7 @@ tsumiageアプリの全画面で共通使用されるヘッダーとフッター
 ```
 ┌────────────────────────────────────────┐
 │                                        │
-│  tsumiage                           ≡  │
+│  projectname                           ≡  │
 │                                        │
 └────────────────────────────────────────┘
 ```
@@ -57,7 +57,7 @@ tsumiageアプリの全画面で共通使用されるヘッダーとフッター
 ```
 ┌────────────────────────────────────────┐
 │                                        │
-│  tsumiage                           ≡  │
+│  projectname                           ≡  │
 │                                        │
 └────────────────────────────────────────┘
 ```
@@ -66,7 +66,7 @@ tsumiageアプリの全画面で共通使用されるヘッダーとフッター
 ```
 ┌────────────────────────────────────────┐
 │                                        │
-│  tsumiage                           ✕  │
+│  projectname                           ✕  │
 │                                        │
 ├────────────────────────────────────────┤
 │                                        │
@@ -108,7 +108,7 @@ tsumiageアプリの全画面で共通使用されるヘッダーとフッター
 │                                        │
 │  ──────────────────────────────────────│
 │                                        │
-│  © tsumiage. All rights     [↑ TOP]   │
+│  © projectname. All rights     [↑ TOP]   │
 │  reserved.                             │
 └────────────────────────────────────────┘
 ```
@@ -124,20 +124,20 @@ tsumiageアプリの全画面で共通使用されるヘッダーとフッター
 #### 1. 最小限サービスリンク構成
 
 **プロダクト（Product） - 2項目のみ**
-- 積み上げ機能 → `https://info.tsumiage.com/features/stackup`（習慣化・経験値機能詳細）
-- SNS機能 → `https://info.tsumiage.com/features/sns`（投稿・コミュニティ機能）
+- 積み上げ機能 → `https://info.projectname.com/features/stackup`（習慣化・経験値機能詳細）
+- SNS機能 → `https://info.projectname.com/features/sns`（投稿・コミュニティ機能）
 
 **サポート（Support） - 1項目のみ**
-- よくある質問 → `https://support.tsumiage.com/faq`（FAQ・ガイド・お問い合わせ統合）
+- よくある質問 → `https://support.projectname.com/faq`（FAQ・ガイド・お問い合わせ統合）
 
 **法務・規約（Legal） - 4項目のみ**
-- 利用規約 → `https://legal.tsumiage.com/terms`
-- プライバシーポリシー → `https://legal.tsumiage.com/privacy`
-- クッキーポリシー → `https://legal.tsumiage.com/cookie-policy`
-- 特定商取引法 → `https://legal.tsumiage.com/commercial-law`
+- 利用規約 → `https://legal.projectname.com/terms`
+- プライバシーポリシー → `https://legal.projectname.com/privacy`
+- クッキーポリシー → `https://legal.projectname.com/cookie-policy`
+- 特定商取引法 → `https://legal.projectname.com/commercial-law`
 
 #### 2. シンプルコピーライト構成
-- **表示形式**: `© tsumiage. All rights reserved.`
+- **表示形式**: `© projectname. All rights reserved.`
 - **年号なし**: 自動更新の複雑さを排除
 - **配置**: 左寄せ（デスクトップ）/ 中央（モバイル）
 
@@ -161,7 +161,7 @@ tsumiageアプリの全画面で共通使用されるヘッダーとフッター
 - **内部パディング**: 上下20px、左右16px（全デバイス統一）
 - **最小高さ**: 200px（コンテンツ保護）
 
-## 統合配色・スタイル（tsumiage統一デザイン）
+## 統合配色・スタイル（projectname統一デザイン）
 
 ### カード・パネル
 - **カード背景**: --bg-card (#1A1A1A)
@@ -218,7 +218,7 @@ tsumiageアプリの全画面で共通使用されるヘッダーとフッター
 ```
 ┌────────────────────────────────────────┐
 │                                        │
-│  tsumiage ヘッダー                     │
+│  projectname ヘッダー                     │
 │  🏠 サービス1 | 📱 サービス2            │
 │                                        │
 ├────────────────────────────────────────┤

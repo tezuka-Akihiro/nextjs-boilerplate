@@ -1,4 +1,4 @@
-# tsumiage Layout System & Animation
+# projectname Layout System & Animation
 
 ## 📝 Typography System
 

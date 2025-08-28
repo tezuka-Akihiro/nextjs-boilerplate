@@ -87,7 +87,7 @@ export default function Footer() {
         {/* コピーライトとトップへ戻るボタン */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-6 border-t border-gray-200">
           <div className="text-sm text-gray-600 mb-4 md:mb-0">
-            © tsumiage. All rights reserved.
+            © projectname. All rights reserved.
           </div>
           
           {showScrollToTop && (

@@ -126,7 +126,7 @@ jobs:
         with:
           file: ./coverage/lcov.info
           flags: backend
-          name: tsumiage-backend-coverage
+          name: projectname-backend-coverage
           fail_ci_if_error: false
 
   # ===== ビルドテストジョブ =====

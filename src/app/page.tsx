@@ -4,7 +4,7 @@ export default function HomePage() {
       <div style={{ maxWidth: '28rem', width: '100%', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
         <div style={{ textAlign: 'center' }}>
           <h1 style={{ fontSize: '2.25rem', fontWeight: 'bold', color: '#111827', marginBottom: '0.5rem' }}>
-            tsumiage
+            projectname
           </h1>
           <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>
             積み上げる、男磨きアプリ

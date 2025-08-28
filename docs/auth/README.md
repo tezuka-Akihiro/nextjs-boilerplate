@@ -1,4 +1,4 @@
-# 認証・認可システム - tsumiageプロジェクト
+# 認証・認可システム - projectnameプロジェクト
 
 ## 🔐 認証システム概要
 
@@ -241,7 +241,7 @@ const testUsers = [
 
 ---
 
-## tsumiage固有要件
+## projectname固有要件
 
 ### 拡張ユーザー情報
 - ニックネーム（必須）

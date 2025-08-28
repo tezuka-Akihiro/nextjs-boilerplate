@@ -1,4 +1,4 @@
-# README分散配置管理 - tsumiageプロジェクト
+# README分散配置管理 - projectnameプロジェクト
 
 ## 管理方針
 - **局所README**: 実装時必須参照（具体的ルール・制約）

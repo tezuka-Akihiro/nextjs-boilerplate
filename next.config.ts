@@ -124,7 +124,7 @@ const nextConfig: NextConfig = {
           {
             key: 'Access-Control-Allow-Origin',
             value: process.env.NODE_ENV === 'production' 
-              ? process.env.NEXTAUTH_URL || 'https://tsumiage.vercel.app'
+              ? process.env.NEXTAUTH_URL || 'https://projectname.vercel.app'
               : '*',
           },
           {

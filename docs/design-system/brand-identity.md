@@ -1,9 +1,9 @@
-# tsumiage Brand Identity & Visual System
+# projectname Brand Identity & Visual System
 
 ## 🌍 Brand Identity & World View
 
 ### Brand Concept
-**tsumiage（積み上げ）** - 20-30代男性向けの男磨き支援アプリ
+**projectname（積み上げ）** - 20-30代男性向けの男磨き支援アプリ
 
 - **ターゲット**: 成長志向の若手男性（20-30代）
 - **価値提案**: 継続的な自己改善による「彼女GET」
@@ -507,6 +507,6 @@
 ---
 
 > **🎨 Brand Principle**: 
-> tsumiageのブランドアイデンティティは「デジタルな成長体験」です。
+> projectnameのブランドアイデンティティは「デジタルな成長体験」です。
 > サイバーパンク風の視覚要素とゲーミフィケーションにより、
 > ユーザーの継続的な自己改善をサポートします。

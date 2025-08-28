@@ -36,7 +36,7 @@ export default function Header({ isAuthenticated = false, user = null, onLogout 
           {/* ロゴ */}
           <div className="flex items-center">
             <Link href="/" className="text-xl font-bold text-gray-900 hover:text-blue-600 transition-colors">
-              tsumiage
+              projectname
             </Link>
           </div>
 

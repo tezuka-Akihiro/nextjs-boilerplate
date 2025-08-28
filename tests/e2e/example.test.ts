@@ -14,9 +14,9 @@ class ExampleE2ETest extends E2ETestBase {
    * ホームページのテスト
    */
   async testHomePage() {
-    await this.testBasicPageLoad('/', 'tsumiage - 男磨きSNS')
+    await this.testBasicPageLoad('/', 'projectname - 男磨きSNS')
     await this.expectElementToBeVisible('[data-testid="hero-section"]')
-    await this.expectElementToContainText('[data-testid="app-title"]', 'tsumiage')
+    await this.expectElementToContainText('[data-testid="app-title"]', 'projectname')
   }
 
   /**
@@ -25,7 +25,7 @@ class ExampleE2ETest extends E2ETestBase {
   async testAuthenticationFlow() {
     // ログインページへ移動
     await this.navigateTo('/auth/signin')
-    await this.expectPageTitle('ログイン - tsumiage')
+    await this.expectPageTitle('ログイン - projectname')
 
     // 無効な認証情報でのログイン試行
     await this.fillText('[data-testid="email-input"]', 'invalid@example.com')

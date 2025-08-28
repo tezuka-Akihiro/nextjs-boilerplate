@@ -1,6 +1,6 @@
 #!/bin/bash
 # ===============================
-# tsumiage Docker 開発環境管理スクリプト
+# projectname Docker 開発環境管理スクリプト
 # ===============================
 
 set -e
@@ -56,7 +56,7 @@ function docker_clean() {
 
 function connect_db() {
     echo "🗃️  PostgreSQL データベースに接続中..."
-    docker-compose exec postgres psql -U postgres -d tsumiage_dev
+    docker-compose exec postgres psql -U postgres -d projectname_dev
 }
 
 function connect_redis() {

@@ -1,8 +1,8 @@
-# tsumiage Design Architecture
+# projectname Design Architecture
 
 ## 📐 Design Specification Hierarchy
 
-tsumiageプロジェクトでは、**3層階層型デザイン仕様** を採用し、効率的なデザイン管理と実装の一貫性を確保します：
+projectnameプロジェクトでは、**3層階層型デザイン仕様** を採用し、効率的なデザイン管理と実装の一貫性を確保します：
 
 ```
 📁 docs/

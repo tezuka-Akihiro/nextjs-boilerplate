@@ -1,4 +1,4 @@
-# tsumiage データベースER図・リレーション図
+# projectname データベースER図・リレーション図
 
 ## 🗄️ Entity Relationship Diagram (ERD)
 
