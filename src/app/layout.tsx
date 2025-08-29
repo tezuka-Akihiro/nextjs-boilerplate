@@ -1,6 +1,8 @@
+import "./globals.css";
+
 export const metadata = {
-  title: "Test App",
-  description: "Simple test",
+  title: "Next.js Universal Boilerplate",
+  description: "A minimalist Next.js boilerplate for local development",
 };
 
 export default function RootLayout({
@@ -9,8 +11,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html>
-      <body>
+    <html lang="en">
+      <body className="antialiased">
         {children}
       </body>
     </html>
