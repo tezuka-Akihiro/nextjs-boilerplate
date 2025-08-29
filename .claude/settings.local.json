@@ -76,7 +76,8 @@
       "Bash(npm:*)",
       "Bash(sed:*)",
       "Bash(next build)",
-      "Bash(lsof:*)"
+      "Bash(lsof:*)",
+      "mcp__ide__getDiagnostics"
     ],
     "deny": []
   }
