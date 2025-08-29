@@ -1,87 +1,115 @@
-# CLAUDE.md - projectnameプロジェクト開発指示書
+# Next.js Universal Boilerplate
 
-絶対に守ること。
-現在は設計中であるため実装は絶対にしない。
-個人開発なのでミニマムシンプル構成。
+モダンなツールとベストプラクティスを備えた、ローカル開発向けのミニマルなNext.jsボイラープレート。
 
-## 📋 プロジェクト概要
+## 🚀 クイックスタート
 
-**[プロジェクト詳細]**: [`docs/project/project-overview.md`](./docs/project/project-overview.md)
-- **アプリ名**: 
-- **目的**: 
+```bash
+# 依存関係のインストール
+npm install
 
-## 🔧 技術実装指針
+# 開発サーバーの起動
+npm run dev
 
-### バックエンド開発
-**[バックエンド実装ルール]**: [`src/backend/README.md`](./src/backend/README.md)
-- AI滑走路4層アーキテクチャの厳格な遵守
-- 階層違反禁止・1ファイル1クラス原則
+# http://localhost:3000 を開く
+```
 
-### フロントエンド開発
-**[フロントエンド実装ルール]**: [`src/app/README.md`](./src/app/README.md)
-- 1サービス1SPA設計の徹底
-- セクション切り替えによる統合ダッシュボード
+## ⚡ 機能
 
-### 開発・品質管理
-**[src/実装ルール統合]**: [`src/README.md`](./src/README.md)
-- コード品質基準・命名規則・Git管理
-## テンプレート参照
+- **Next.js 15** App Router対応
+- **React 19** 最新機能
+- **TypeScript** 型安全性
+- **Tailwind CSS 4** スタイリング
+- **Vitest** ユニットテスト
+- **Playwright** E2Eテスト
+- **ESLint + Prettier** コード品質
+- **Husky** Gitフック
 
-コード生成時は必ず `docs/templates/` のひな型を参照してください：
+## 📝 利用可能なスクリプト
 
-- **Requirements**: `docs/templates/requirements/` - 要件定義テンプレート
-  - アプリ要件: `docs/templates/requirements/app.md`
-  - サービス要件: `docs/templates/requirements/service.md` 
-  - 機能要件: `docs/templates/requirements/function.md`
-- **Backend層**: `docs/templates/backend/` - AI滑走路4層アーキテクチャ
-  - API層: `docs/templates/backend/ApiTemplate.ts`
-  - Controller層: `docs/templates/backend/ControllerTemplate.ts`
-  - Task層: `docs/templates/backend/TaskTemplate.ts`
-  - Resource層: `docs/templates/backend/ResourceTemplate.ts`
-  - Response層: `docs/templates/backend/ResponseTemplate.ts`
-- **Testing**: `docs/templates/testing/` - 各層対応テストテンプレート
-- **Wireframe**: `docs/templates/wireframe/` - ワイヤフレームテンプレート（アプリ・サービス・機能）
+| コマンド | 説明 |
+|---------|-------------|
+| `npm run dev` | 開発サーバーの起動 |
+| `npm run build` | プロダクションビルド |
+| `npm run start` | プロダクションサーバーの起動 |
+| `npm run lint` | ESLintの実行 |
+| `npm run lint:fix` | ESLintエラーの修正 |
+| `npm run type-check` | TypeScriptの型チェック |
+| `npm run format` | Prettierでコード整形 |
+| `npm run test` | ユニットテストの実行 |
+| `npm run test:watch` | ウォッチモードでテスト実行 |
+| `npm run test:coverage` | カバレッジ付きテスト実行 |
+| `npm run test:e2e` | E2Eテストの実行 |
 
-各ひな型の制約・命名規則・コメント記法を必ず守ってください。詳細は [`docs/templates/README.md`](./docs/templates/README.md) を参照。
+## 📁 プロジェクト構成
 
-**要件定義作成時は必須**：新機能・サービス要件作成時は対応するテンプレートから開始してください。
+```
+src/
+├── app/              # Next.js App Router ページ
+├── backend/          # サーバーサイドロジック（4層アーキテクチャ）
+├── components/       # 再利用可能なUIコンポーネント
+├── hooks/           # カスタムReactフック
+├── lib/             # ユーティリティ関数
+└── shared/          # 共有型と設定
 
-## 主要機能（MVP）
-`src/app/README.md`
+tests/
+├── backend/         # バックエンドテスト
+├── e2e/            # エンドツーエンドテスト
+└── frontend/       # フロントエンドテスト
+```
 
-## 🚀 運用・デプロイメント
+## 🛠 開発ガイドライン
 
-**[デプロイメント戦略]**: [`docs/deployment/strategy.md`](./docs/deployment/strategy.md)
-- GitHub Actions CI/CD・環境変数管理
-- Vercel デプロイ・監視システム統合
+- **AI滑走路4層アーキテクチャ** バックエンド構造
+- **1サービス1SPA設計** フロントエンドアーキテクチャ
+- `docs/templates/` のテンプレートに従った一貫したコードパターン
+- 詳細な開発指示は `CLAUDE.md` を参照
 
-## 🔗 関連ドキュメント
-### 開発・運用支援
-- **[API仕様書]**: `docs/architecture/api-specification.md`
-- **[データベース設計]**: `docs/database/`
-- **[テスト実行ガイド]**: `docs/testing/test-execution-guide.md`
+## 📚 ドキュメント
 
-## 📋 ドキュメント管理
+- **プロジェクト概要**: `docs/project-overview.md`
+- **アーキテクチャ**: `docs/architecture/`
+- **テンプレート**: `docs/templates/`
+- **テスト**: `docs/testing/`
 
-**[README分散配置管理]**: [`docs/README.md`](./docs/README.md)
-- 全READMEファイルの責務・参照タイミングを一元管理
-- 抽象設計 vs 具体実装ルールの棲み分け
-- 新規README作成時の管理ルール
+## 🔧 技術スタック
 
-### ドキュメントファイル制限
-- **最大500行制限**: README・設計・方針ファイルは500行以内
-- **分割基準**: 機能別・責務別に自然な単位で分割
-- **適用外**: ワイヤーフレーム等の図説明ファイルは制限対象外
-- **500行超過時**: 論理単位での分割を必須とする
+### コア
+- **フレームワーク**: Next.js 15
+- **ランタイム**: React 19
+- **言語**: TypeScript 5
+- **スタイリング**: Tailwind CSS 4
+
+### テスト
+- **ユニットテスト**: Vitest + Testing Library
+- **E2Eテスト**: Playwright
+- **カバレッジ**: Vitest Coverage
+
+### 開発ツール
+- **リント**: ESLint
+- **フォーマッタ**: Prettier
+- **Gitフック**: Husky + lint-staged
+- **型チェック**: TypeScript
+
+### UIコンポーネント
+- **アイコン**: Lucide React
+- **チャート**: Recharts
+- **ユーティリティ**: clsx, tailwind-merge
+
+## 📋 はじめ方
+
+1. **リポジトリのクローン**
+2. **依存関係のインストール**: `npm install`
+3. **開発の開始**: `npm run dev`
+4. **ドキュメントを読む**: `docs/` で詳細ガイドを確認
+
+## 🤝 コントリビューション
+
+1. `src/README.md` で定義されたコーディング標準に従う
+2. 新しいコンポーネントには `docs/templates/` のテンプレートを使用
+3. 新機能にはテストを書く
+4. コミット前に `npm run lint` と `npm run type-check` を実行
 
 ---
 
-## ⚠️ 重要な制約・開発原則
-
-1. **AI滑走路4層アーキテクチャ厳守** - 階層違反・複数クラス配置禁止
-2. **1サービス1SPA設計徹底** - 画面遷移禁止・セクション切り替えのみ
-3. **テンプレート必須参照** - `docs/templates/` のひな型・命名規則遵守
-4. **セキュリティファースト** - RLS活用・定期キーローテーション
-5. **TDD実践** - AITDD tsumiki kairo/tddコマンド活用
-
-> **注記**: この指示書はプロジェクトの開発方針を定める重要なドキュメントです。全開発者が遵守してください。
+❤️ モダンなWeb開発のために構築
