@@ -1,16 +1,16 @@
 export default function HomePage() {
   return (
     <div style={{ minHeight: '100vh', background: 'linear-gradient(to bottom right, #dbeafe, #e0e7ff)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '1rem' }}>
-      <div style={{ maxWidth: '28rem', width: '100%', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+      <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '2rem' }}>
         <div style={{ textAlign: 'center' }}>
           <h1 style={{ fontSize: '2.25rem', fontWeight: 'bold', color: '#111827', marginBottom: '0.5rem' }}>
-            projectname
+            tsumiage
           </h1>
           <p style={{ color: '#6b7280', fontSize: '0.875rem' }}>
             積み上げる、男磨きアプリ
           </p>
         </div>
-        
+
         <div style={{ backgroundColor: 'white', boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)', borderRadius: '0.5rem', padding: '2rem' }}>
           <form style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
             <div>
@@ -26,7 +26,7 @@ export default function HomePage() {
                 placeholder="example@example.com"
               />
             </div>
-            
+
             <div>
               <label htmlFor="password" style={{ display: 'block', fontSize: '0.875rem', fontWeight: '500', color: '#374151', marginBottom: '0.5rem' }}>
                 パスワード
@@ -40,7 +40,7 @@ export default function HomePage() {
                 placeholder="••••••••"
               />
             </div>
-            
+
             <div>
               <button
                 type="submit"
@@ -49,7 +49,7 @@ export default function HomePage() {
                 ログイン
               </button>
             </div>
-            
+
             <div style={{ textAlign: 'center' }}>
               <p style={{ fontSize: '0.875rem', color: '#6b7280' }}>
                 アカウントをお持ちでない方は{' '}
@@ -60,7 +60,7 @@ export default function HomePage() {
             </div>
           </form>
         </div>
-        
+
         <div style={{ textAlign: 'center' }}>
           <p style={{ fontSize: '0.75rem', color: '#9ca3af' }}>
             継続は力なり。積み上げていこう。
