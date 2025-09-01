@@ -50,7 +50,6 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  
   // リダイレクト設定
   async redirects() {
     return [
@@ -61,6 +60,8 @@ const nextConfig: NextConfig = {
       },
     ];
   },
+    // ワークスペースルートの明示（警告解消）
+  outputFileTracingRoot: __dirname,
 };
 
 export default nextConfig;
