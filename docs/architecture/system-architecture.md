@@ -310,12 +310,17 @@ Application Error → Error Boundary → Error Log Resource → Database
 
 ## 📝 実装指針
 
-### 1. **段階的SPA実装アプローチ**
+### 1. **MVP SPA実装アプローチ**
 ```
-Phase 1: Core Backend (SPA統合API + Database + 認証インフラ)
-Phase 2: 積み上げSPA (習慣・期日・ストリーム統合)
-Phase 3: SNS SPA (投稿・SNS・定型コメント統合)
-Phase 4: SPA間連携 (リアルタイム同期・状態共有)
+MVP: Core Backend + 統合SPA (習慣記録・投稿・定型コメント統合)
+- SPA統合API + Database + 認証インフラ
+- 習慣記録・投稿機能統合
+- 基本的な定型コメント機能
+
+範囲外 (Out of Scope):
+- 高度なリアルタイム同期
+- SPA間連携機能
+- 複雑な状態共有
 ```
 
 ### 2. **SPA対応コード組織・命名規則**

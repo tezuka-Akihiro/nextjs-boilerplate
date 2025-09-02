@@ -84,15 +84,8 @@
 
 ### Color Usage Guidelines
 ```css
-/* ===== Light Mode Support (Future) ===== */
-[data-theme="light"] {
-  --bg-dark: #F8F9FA;
-  --bg-card: #FFFFFF;
-  --text-primary: #1A1A1A;
-  --text-secondary: #4A4A4A;
-  --text-muted: #6A6A6A;
-  /* Primary colors remain the same for brand consistency */
-}
+/* ===== MVP: Dark Mode Only ===== */
+/* Light Mode: Out of Scope for this project */
 ```
 
 ---
